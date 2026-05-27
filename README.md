@@ -1,19 +1,25 @@
 # Kelompok 5 - Topik A
-Nama: 
-Cindy Samosir             241402009
-Cindy Artika              241402012
-Earlin Tasia Gulo         241402089
-Dolly Efredi Bukit        241402021
-Chaterine Eklesia Maryati 241402123
-Rohaya Hasibuan           241402030
 
-Teknologi Informasi
-Fakultas Ilmu Komputer & Teknologi Informasi
-Universitas Sumatera Utara
+## Anggota Kelompok
 
-## Arsitektur
+- Cindy Samosir — 241402009  
+- Cindy Artika — 241402012  
+- Earlin Tasia Gulo — 241402089  
+- Dolly Efredi Bukit — 241402021  
+- Chaterine Eklesia Maryati — 241402123  
+- Rohaya Hasibuan — 241402030  
 
+## Program Studi
 
+Teknologi Informasi  
+Fakultas Ilmu Komputer & Teknologi Informasi  
+Universitas Sumatera Utara  
+
+---
+
+## Arsitektur Sistem
+
+Proyek ini menggunakan beberapa layanan dan teknologi berikut:
 
 - Nginx Reverse Proxy
 - WordPress Container
@@ -23,10 +29,11 @@ Universitas Sumatera Utara
 - Fail2Ban
 - HTTPS SSL/TLS
 
-## Cara Menjalankan
+---
 
+## Cara Menjalankan Project
+
+Jalankan perintah berikut:
+
+```bash
 docker compose up -d
-
-## Domain
-
-kelima.com
