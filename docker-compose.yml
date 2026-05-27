@@ -1,0 +1,84 @@
+services:
+
+  nginx:
+
+    image: nginx:latest
+
+    container_name: nginx-proxy
+
+    restart: always
+
+    ports:
+      - "80:80"
+      - "443:443"
+
+    volumes:
+      - ./nginx/conf.d:/etc/nginx/conf.d
+      - ./nginx/ssl:/etc/nginx/ssl
+
+    depends_on:
+      - wordpress
+
+    networks:
+      - frontend
+      - backend
+
+  wordpress:
+
+    image: wordpress:latest
+
+    container_name: wordpress
+
+    restart: always
+
+    environment:
+
+      WORDPRESS_DB_HOST: mariadb:3306
+
+      WORDPRESS_DB_USER: ${MYSQL_USER}
+
+      WORDPRESS_DB_PASSWORD: ${MYSQL_PASSWORD}
+
+      WORDPRESS_DB_NAME: ${MYSQL_DATABASE}
+
+    volumes:
+      - wordpress_data:/var/www/html
+
+    networks:
+      - backend
+
+  mariadb:
+
+    image: mariadb:11
+
+    container_name: mariadb
+
+    restart: always
+
+    env_file:
+      - .env
+
+    volumes:
+      - mariadb_data:/var/lib/mysql
+
+    expose:
+      - "3306"
+
+    networks:
+      - backend
+
+volumes:
+
+  wordpress_data:
+
+  mariadb_data:
+
+networks:
+
+  frontend:
+
+    driver: bridge
+
+  backend:
+
+    driver: bridge
