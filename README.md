@@ -1,5 +1,11 @@
 # Kelompok 5 - Topik A
 Nama: 
+Cindy Samosir             241402009
+Cindy Artika              241402012
+Earlin Tasia Gulo         241402089
+Dolly Efredi Bukit        241402021
+Chaterine Eklesia Maryati 241402123
+Rohaya Hasibuan           241402030
 
 ## Arsitektur
 
