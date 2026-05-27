@@ -1,5 +1,8 @@
 # Kelompok 5 - Topik A
 
+## Dosen Pengampu
+Dosen Pengampu : Ainul Hizriadi S.Kom., M.Sc
+
 ## Anggota Kelompok
 
 - Cindy Samosir — 241402009  
