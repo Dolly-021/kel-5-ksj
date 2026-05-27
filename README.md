@@ -37,3 +37,18 @@ Jalankan perintah berikut:
 
 ```bash
 docker compose up -d
+```
+---
+
+## Domain
+
+Project ini menggunakan domain:
+
+[kelima.com](https://kelima.com)
+
+---
+
+## IP Adress
+```bash
+172.30.67.107/19
+```
