@@ -7,6 +7,10 @@ Dolly Efredi Bukit        241402021
 Chaterine Eklesia Maryati 241402123
 Rohaya Hasibuan           241402030
 
+Teknologi Informasi
+Fakultas Ilmu Komputer & Teknologi Informasi
+Universitas Sumatera Utara
+
 ## Arsitektur
 
 
